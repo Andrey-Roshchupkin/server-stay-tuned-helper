@@ -20,10 +20,13 @@ const makeGetRequestToDocInfoMockServer = () => {
       if (!response.ok) {
         throw new Error("Request failed");
       }
-      console.log("GET request to DocInfo successful");
+      console.log("GET request to DocInfoMockServer successful");
     })
     .catch((error) => {
-      console.error("Error making GET request to DocInfo:", error.message);
+      console.error(
+        "Error making GET request to DocInfoMockServer:",
+        error.message
+      );
     });
 };
 
